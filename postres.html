@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mordisquitos</title>
+    <link rel="stylesheet" href="mordsiquitosmenu.css">
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        main {
+            border: 6px;
+          
+
+        }
+        article {
+            width: 90vw;
+            margin: auto;
+            border: 2px solid;
+            gap: 24px;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 30% 70%;
+            grid-template-rows: 80px;
+            grid-template-areas:
+                "img titulo"
+                "img ingredientes"
+                "pasos pasos";
+
+        }
+        article *{
+            border:3px solid green
+        }
+        .imagen {
+            /*esto va a desaparecer si ponemos grid*/
+            grid-area: img;
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .ingredientes {
+            background-color: antiquewhite;
+            grid-area:
+            ingredientes;
+            line-height: 1;
+            padding: 15px;
+          
+        }
+
+
+        .pasos {
+            grid-area: pasos;
+            background-color: beige;
+            line-height: 2;
+            padding: 15px;
+           
+        }
+
+        .titulo {
+
+            grid-area: titulo;
+            text-align: center;
+            align-content: center;
+            font-family: "Mystery Quest", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            font-size: xx-large;
+        }
+        .ingredientes, .pasos, .titulo{
+            border-radius: 15px;
+            border: solid;
+            border-color: rgb(165, 101, 42);
+        }
+        ul {
+            padding: 40px;
+        }
+
+        ol {
+            padding: 40px;
+        }
+    footer{
+    padding: 5px;
+    background-color: black;
+    height: 35px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 0px;
+    margin-top: 90px;
+     }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Mordisquitos</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="reposteria.html">Repostería</a>
+            <a href="almuerzo.html">Almuerzo/cena</a>
+            <a href="postres.html">Postres</a>
+        </nav>
+    </header>
+
+    <article>
+        <img src="imagenes/chocotorta.jpg" alt="" class="imagen">
+        <h1 class="titulo">CHOCOTORTA</h1>
+        <div class="ingredientes">
+            <h2>Ingredientes</h2>
+            <ul>
+                <li>>400 g de galletitas de chocolate tipo Chocolinas</li>
+            <li> 500 g de dulce de leche repostero</li>
+            <li> 500 g de queso crema</li>
+                <li>Café fuerte (para mojar las galletitas)</li>
+            <li> Chocolate rallado</li>
+            <li>Cacao amargo o chips de chocolate (opcional, para decorar)</li>
+            </ul>
+        </div>
+        <div class="pasos">
+            <h2>Pasos</h2>
+            <li></li>
+            <li></li>
+            <li></li>
+
+        </div>
+      
+        Mezclar la crema: En un bol, batí el dulce de leche con el queso crema hasta que quede una mezcla suave y
+        homogénea.
+
+        Mojar las galletitas: Prepará un café fuerte (puede ser con un poco de azúcar si preferís). Pasá rápidamente las
+        galletitas por el café (¡sin dejarlas mucho para que no se rompan!).
+
+        Armar la torta:
+
+        En una fuente rectangular o cuadrada, hacé una base con las galletitas mojadas.
+
+        Encima, poné una capa de la mezcla de queso y dulce.
+
+        Repetí capas de galletitas y crema hasta terminar.
+
+        Terminar y decorar: La última capa tiene que ser de crema. Podés decorar con cacao amargo, chocolate rallado,
+        chips o lo que más te guste.
+
+        Enfriar: Llevá la torta a la heladera por al menos 4 horas (lo ideal es de un día para el otro, así se asienta
+        bien).
+    </article>
+    <footer>
+        <p>created by @Villasboas Selene</p>
+    </footer>
+</body>
+</html>

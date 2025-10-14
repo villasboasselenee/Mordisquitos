@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mordisquitos</title>
+    <link rel="stylesheet" href="mordsiquitosmenu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Keyboard&family=Mystery+Quest&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        main{
+            border: 6px;
+
+        }
+        article {
+            gap: 24px;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 30% 70%;
+            grid-template-areas: 
+            "img titulo"
+            "img ingredientes"
+            "imagen2 ingredientes"
+            "pasos pasos";
+    
+        }
+        @media(max-width: 768px){
+            article{
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                "titulo"
+                "img"
+                "imagen2"
+                "img"
+                ;
+            }
+        }
+        .imagen {
+            /*esto va a desaparecer si ponemos grid*/
+            grid-area: img;
+            width: 100%;
+            border-radius: 15px;
+            max-height: 350px;
+            aspect-ratio: 9/16;
+            object-fit: cover;
+        }
+        .imagen2{
+            grid-area: imagen2;
+            width: 100%;
+            border-radius: 15px;
+            max-height: 450px;
+            aspect-ratio: 9/16;
+            object-fit: cover;
+        }
+        .ingredientes {   
+            background-color: antiquewhite;         
+            grid-area:
+            ingredientes;
+            line-height: 1;
+            padding: 15px;
+            border-radius: 15px;
+            border: solid;
+            border-color: rgb(165, 101, 42);
+        }
+        .pasos{
+            grid-area: pasos;
+            background-color: beige;
+            line-height: 2;
+            padding: 15px;
+            border-radius: 10px;
+            border: solid;
+            border-color: rgb(165, 101, 42);
+        }
+        .titulo {
+        grid-area: titulo;
+        text-align: center;
+        align-content: center;
+        font-family: "Mystery Quest", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size: xx-large;
+        }
+
+.ingredientes, .pasos, .titulo{
+            border-radius: 15px;
+            border: solid;
+            border-color: rgb(165, 101, 42);
+        }
+
+       ul{
+        padding: 40px;
+       } 
+    ol{
+        padding: 40px;
+    }
+    footer{
+    padding: 5px;
+    background-color: black;
+    height: 35px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 0px;
+    margin-top: 90px;
+    padding: 10px;
+    }
+    @media (max-width:768px) {
+     article{
+        grid-template-columns:1fr;
+            grid-template-rows: 80px;
+            grid-template-areas:
+                "titulo"
+                "img"
+                "imagen2"
+                "ingredientes"
+                "pasos";
+     }
+    }
+    h2{
+        padding-top: 50px;
+    }
+    .paralamasa{
+        padding-top: 20px;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Mordisquitos</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="reposteria.html">Repostería</a>
+            <a href="almuerzo.html">Almuerzo/cena</a>
+            <a href="postres.html">Postres</a>
+        </nav>
+    </header>
+
+    <body>
+        <main>
+
+            <article>
+                <img src="imagenes/pizza.jpg" alt="" class="imagen">
+                <img src="imagenes/pizza preparación.jpg" alt="" class="imagen2">
+                <h1 class="titulo">PIZZA</h1>
+                <div class="ingredientes">
+                    <h2>Ingredientes</h2>
+                    <ul>
+                        <h2 class="paralamasa">Para la masa</h2>
+                        <li>500 g de harina (000 o común)
+                        <li> 300 ml de agua tibia</li>
+                        <li>25 g de levadura fresca (o 7 g de levadura seca)</li> 
+                        <li>2 cdas de aceite de oliva</li>
+                        <li> 1 cdita de sal</li>
+                        <li> 1 pizca de azúcar</li>
+                        <h2>Para la salsa</h2>
+                        <li>1 lata de tomate triturado (400 g) o 4 tomates frescos pelados y procesados</li>
+                        <li> 2 cdas de aceite de oliva</li>
+                        <li>1 diente de ajo (opcional)</li>
+                        <li> 1 pizca de azúcar (para quitar acidez)</li>
+                        <li>Sal y pimienta a gusto</li>
+                        <li>Orégano o albahaca seca</li>
+                        <h2>Para la cobertura</h2>
+                        <li>jamón, aceitunas, morrones, cebolla, etc.</li>
+                        <li>250 g de queso mozzarella</li>
+                    </ul>
+                </div>
+                <div class="pasos">
+                    <h2>Pasos</h2>
+                        <li><strong>Activar la levadura</strong></li>
+                        Disolver la levadura en el agua tibia con el azúcar.
+                        Dejar reposar 10 minutos hasta que haga espuma (así sabés que está activa).
+
+                        <li><strong>Preparar la masa</strong></li>
+                        En un bowl grande poner la harina y la sal.
+                        Hacer un hueco en el centro y agregar la levadura activada y el aceite.
+                        Mezclar hasta formar una masa.
+
+                        <li><strong>Amasar</strong></li>
+                        Pasar la masa a la mesa y amasar unos 10 minutos hasta que quede lisa y elástica.
+                        Si se pega mucho, espolvoreá con un poquito de harina.
+
+                        <li><strong>Leudar</strong></li>
+                        Colocar la masa en un bowl aceitado, tapar con un repasador y dejar reposar 1 hora aprox., hasta que duplique su tamaño.
+
+                        <li><strong>Formar la base</strong></li>
+                        Dividir la masa en 2 bollos.
+                        Estirar cada uno sobre una pizzera aceitada o enharinada, dándole forma redonda.
+
+                        <li><strong>Precocinar la base</strong></li>
+                        Llevar las pizzeras con la masa al horno precalentado a 200 °C por 8-10 minutos (solo la base, sin salsa). Esto evita que quede cruda.
+
+                        <li><strong>Preparar la salsa</strong></li>
+                        En una sartén, sofreír el ajo con un poco de aceite.
+                        Agregar el tomate, sal, orégano y albahaca. Cocinar 10 minutos a fuego bajo.
+
+                        <li><strong>Armar la pizza</strong></li>
+                        Sacar la base precocida, untar con salsa, cubrir con mozzarella y los ingredientes que quieras.
+
+                        <li><strong>Hornear</strong></li>
+                        Llevar nuevamente al horno a 200 °C hasta que el queso se derrita y los bordes estén dorados (10-15 minutos).
+
+                        <li><strong>Servir</strong></li>
+                        ¡Lista tu pizza casera! Podés terminar con un chorrito de aceite de oliva o unas hojas de albahaca fresca.
+                </div>
+            </article>
+        </main>
+    </body>
+
+</head>
+<footer>
+    <p>&copy 2025 - created by @Villasboas Selene</p>
+</footer>
+<body>
+</html>

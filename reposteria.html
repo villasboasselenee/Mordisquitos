@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mordisquitos</title>
+    <link rel="stylesheet" href="mordsiquitosmenu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libertinus+Keyboard&family=Mystery+Quest&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        main{
+            border: 6px;
+
+        }
+        article {
+            gap: 24px;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 30% 70%;
+            grid-template-areas: 
+            "img titulo"
+            "img ingredientes"
+            "imagen2 ingredientes"
+            "pasos pasos";
+    
+        }
+        @media(max-width: 768px){
+            article{
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                "titulo"
+                "img"
+                "imagen2"
+                "img"
+                ;
+            }
+        }
+
+        .imagen {
+            /*esto va a desaparecer si ponemos grid*/
+            grid-area: img;
+            width: 100%;
+            border-radius: 15px;
+            max-height: 350px;
+            aspect-ratio: 9/16;
+            object-fit: cover;
+        }
+        .imagen2{
+            grid-area: imagen2;
+            width: 100%;
+            border-radius: 15px;
+            max-height: 450px;
+            aspect-ratio: 9/16;
+            object-fit: cover;
+        }
+        .ingredientes {   
+            background-color: antiquewhite;         
+            grid-area:
+            ingredientes;
+            line-height: 1;
+            padding: 15px;
+            border-radius: 15px;
+            border: solid;
+            border-color: rgb(165, 101, 42);
+        }
+        .pasos{
+            grid-area: pasos;
+            background-color: beige;
+            line-height: 2;
+            padding: 15px;
+            border-radius: 10px;
+            border: solid;
+            border-color: rgb(165, 101, 42);
+        }
+        .titulo {
+        grid-area: titulo;
+        text-align: center;
+        align-content: center;
+        font-family: "Mystery Quest", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size: xx-large;
+        }
+
+.ingredientes, .pasos, .titulo{
+            border-radius: 15px;
+            border: solid;
+            border-color: rgb(165, 101, 42);
+        }
+
+       ul{
+        padding: 40px;
+       } 
+    ol{
+        padding: 40px;
+    }
+    footer{
+    padding: 5px;
+    background-color: black;
+    height: 35px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 0px;
+    margin-top: 90px;
+    padding: 10px;
+    }
+    @media (max-width:768px) {
+     article{
+        grid-template-columns:1fr;
+            grid-template-rows: 80px;
+            grid-template-areas:
+                "titulo"
+                "img"
+                "imagen2"
+                "ingredientes"
+                "pasos";
+     }
+    }
+    h2{
+        padding-top: 50px;
+    }
+    .paralamasa{
+        padding-top: 20px;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Mordisquitos</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="reposteria.html">Repostería</a>
+            <a href="almuerzo.html">Almuerzo/cena</a>
+            <a href="postres.html">Postres</a>
+        </nav>
+    </header>
+
+    <body>
+        <main>
+
+            <article>
+                <img src="imagenes/donas.jpg" alt="img1" class="imagen">
+                <img src="imagenes/donas crudas.3.jpg" alt="img2" class="imagen2">
+                <h1 class="titulo">DONAS</h1>
+                <div class="ingredientes">
+                    <h2>Ingredientes</h2>
+                    <ul>
+                        <li>Para la masa (≈12 donas)</li>
+                        <li>500 g harina de trigo (000 / todo uso)</li>
+                        <li>60g azúcar</li>
+                        <li>7 g levadura seca instantánea (1 sobre)</li>
+                        <li>1 cucharadita de sal</li>
+                        <li>2 huevos medianos</li>
+                        <li>200 ml leche tibia (no caliente)</li>
+                        <li>60 g mantequilla blanda (a temperatura ambiente)</li>
+                        <li>1 cucharadita extracto de vainilla (opcional)</li>
+                        <li>Aceite neutro (girasol, canola) — suficiente para 4–5 cm de profundidad en la olla</li>
+                    <h2>Para el glaseado básico (vainilla)</h2>
+                    <ul>
+
+                        <li>250 g azúcar impalpable (glas / icing sugar)</li>
+                        <li>3–5 cucharadas de leche (añadir hasta conseguir la textura deseada)</li>
+                        <li>1 cucharadita de extracto de vainilla</li>
+                        <li>1 cucharada de mantequilla derretida (opcional, da brillo)</li>
+                        <li>Glaseado de chocolate (opcional)</li>
+                        <li>150 g azúcar impalpable</li>
+                        <li>2–3 cucharadas cacao en polvo sin azúcar</li>
+                        <li>2–4 cucharadas de leche</li>
+                        <li>1 cucharada de mantequilla derretida</li>
+                        <li>Pizca de sal</li>
+                    </ul>
+                </div>
+                <div class="pasos">
+                    <h2>Pasos</h2>
+                    <ol>
+                        <li><strong>Preparar la levadura (opcional):</strong> Si no usas levadura instantánea
+                            activada,
+                            disuélvela en 50 ml de leche tibia con 1 cucharadita de azúcar y deja 5–8 min hasta
+                            que
+                            burbujee. Si usas instantánea, puede incorporarse directamente.</li>
+                        <li><strong>Mezclar los ingredientes secos:</strong> En un bol grande combina la harina,
+                            el
+                            azúcar y
+                            la sal.</li>
+                        <li><strong>Añadir líquidos y amasar:</strong> Haz un hueco en la harina y añade los
+                            huevos, la
+                            leche tibia, la vainilla (si la usas) y la mezcla de levadura. Integra y añade la
+                            mantequilla
+                            blanda. Amasa 8–10 min a mano o 5–7 min en batidora con gancho hasta que la masa
+                            quede lisa
+                            y
+                            elástica.</li>
+                        <li><strong>Primera fermentación:</strong> Forma una bola con la masa, colócala en un
+                            bol
+                            engrasado,
+                            cubre con film o un paño y deja levar 60–90 minutos hasta que doble su volumen.</li>
+                        <li><strong>Formar las donas:</strong> Desgasifica suavemente la masa y estírala sobre
+                            una
+                            superficie enharinada a ~1 cm de grosor. Corta círculos (≈7 cm) y el agujero central
+                            (≈2–3
+                            cm).
+                            Coloca en una bandeja con papel vegetal, cubre y deja levar 30–40 minutos más.</li>
+                        <li><strong>Calentar el aceite:</strong> Llena una olla con aceite suficiente (4–5 cm de
+                            profundidad) y caliéntalo a 170–180 °C. Si no tienes termómetro, prueba con un
+                            trocito de
+                            masa;
+                            debe burbujear y subir en ~10–15 s.</li>
+                        <li><strong>Freír:</strong> Fríe pocas donas a la vez, 45–90 segundos por lado hasta
+                            dorar. Usa
+                            una
+                            espumadera para darles la vuelta y retíralas sobre papel absorbente.</li>
+                        <li><strong>Preparar el glaseado (vainilla):</strong> Mezcla 250 g de azúcar impalpable
+                            con 3–5
+                            cucharadas de leche, 1 cucharadita de extracto de vainilla y 1 cucharada de
+                            mantequilla
+                            derretida (opcional). Ajusta la leche hasta obtener una textura fluida.</li>
+                        <li><strong>Glasear:</strong> Sumerge la parte superior de las donas aún tibias en el
+                            glaseado y
+                            deja escurrir sobre una rejilla. Decora con chispas si quieres.</li>
+                        <li><strong>Servir y conservar:</strong> Sirve tibias. Conserva en recipiente hermético
+                            1–2
+                            días.
+                            Para recuperar textura, calienta 6–8 s en microondas.</li>
+                </div>
+                </div>
+            </article>
+        </main>
+ <footer>
+    <p>&copy 2025 - created by @Villasboas Selene</p>
+ </footer>
+</body>
+</html>

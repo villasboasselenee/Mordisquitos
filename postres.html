@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mordisquitos</title>
     <link rel="stylesheet" href="mordsiquitosmenu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Keyboard&family=Mystery+Quest&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0%;
@@ -21,7 +24,7 @@
         article {
             width: 90vw;
             margin: auto;
-            border: 2px solid;
+            border: 2px ;
             gap: 24px;
             padding: 20px;
             display: grid;
@@ -34,13 +37,16 @@
 
         }
         article *{
-            border:3px solid green
+            border:3px
         }
         .imagen {
             /*esto va a desaparecer si ponemos grid*/
             grid-area: img;
             width: 100%;
             border-radius: 15px;
+            max-height: 450px;
+            aspect-ratio: 9/16;
+            object-fit: cover;
         }
 
         .ingredientes {
@@ -92,7 +98,19 @@
     font-size: 15px;
     margin-bottom: 0px;
     margin-top: 90px;
+    padding: 10px;
      }
+    @media (max-width:768px) {
+     article{
+        grid-template-columns:1fr;
+            grid-template-rows: 80px;
+            grid-template-areas:
+                "titulo"
+                "img"
+                "ingredientes"
+                "pasos";
+     }
+    }
     </style>
 </head>
 
@@ -123,34 +141,21 @@
         </div>
         <div class="pasos">
             <h2>Pasos</h2>
-            <li></li>
-            <li></li>
-            <li></li>
-
+            <li><strong>Mezclar la crema:</strong> liEn un bol, batí el dulce de leche con el queso crema hasta que quede una mezcla suave y
+                homogénea.
+                <li><strong>Mojar las galletitas:</strong>Prepará un café fuerte (puede ser con un poco de azúcar si preferís). Pasá rápidamente las
+                    galletitas por el café (¡sin dejarlas mucho para que no se rompan!).</li>
+            <li><strong>Armar la torta:</strong> En una fuente rectangular o cuadrada, hacé una base con las galletitas mojadas.
+                Encima, poné una capa de la mezcla de queso y dulce.
+                Repetí capas de galletitas y crema hasta terminar.</li>
+            <li><strong> Terminar y decorar:</strong> La última capa tiene que ser de crema. Podés decorar con cacao amargo, chocolate rallado,
+                chips o lo que más te guste.</li>
+            <li><strong> Enfriar:</strong> Llevá la torta a la heladera por al menos 4 horas (lo ideal es de un día para el otro, así se asienta
+                bien).</li>
         </div>
-      
-        Mezclar la crema: En un bol, batí el dulce de leche con el queso crema hasta que quede una mezcla suave y
-        homogénea.
-
-        Mojar las galletitas: Prepará un café fuerte (puede ser con un poco de azúcar si preferís). Pasá rápidamente las
-        galletitas por el café (¡sin dejarlas mucho para que no se rompan!).
-
-        Armar la torta:
-
-        En una fuente rectangular o cuadrada, hacé una base con las galletitas mojadas.
-
-        Encima, poné una capa de la mezcla de queso y dulce.
-
-        Repetí capas de galletitas y crema hasta terminar.
-
-        Terminar y decorar: La última capa tiene que ser de crema. Podés decorar con cacao amargo, chocolate rallado,
-        chips o lo que más te guste.
-
-        Enfriar: Llevá la torta a la heladera por al menos 4 horas (lo ideal es de un día para el otro, así se asienta
-        bien).
     </article>
     <footer>
-        <p>created by @Villasboas Selene</p>
+        <p>&copy 2025 - created by @Villasboas Selene</p>
     </footer>
 </body>
 </html>

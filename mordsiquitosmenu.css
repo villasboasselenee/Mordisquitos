@@ -1,0 +1,36 @@
+        /*falta la hoja de estilo de menu*/
+        header {
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #6b3e26;
+            background-color: rgba(212, 170, 117, 0.863);
+            margin: 0 10px;
+            padding: 10px 15px;
+            border-radius: 15px;
+            transition: background-color 0.3s ease;
+            margin: 20px;
+        }
+
+        nav a:hover {
+            background-color: #f5b97f;
+            color: #fff;
+        }
+
+        h1 {
+            font-family: "Mystery Quest", system-ui;
+
+            margin: 10px;
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        /*---fin--menu*/
